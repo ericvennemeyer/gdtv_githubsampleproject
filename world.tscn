@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4y7mvbryhf0g"]
+[gd_scene load_steps=4 format=3 uid="uid://c4y7mvbryhf0g"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_uc7nt"]
 font_size = 32
 
 [sub_resource type="LabelSettings" id="LabelSettings_rkrvo"]
 font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_hwy2l"]
+font_size = 32
 
 [node name="World" type="Node2D"]
 
@@ -41,3 +44,15 @@ grow_vertical = 2
 size_flags_horizontal = 4
 text = "i'm beginning to doubt whether i can make any good labels"
 label_settings = SubResource("LabelSettings_rkrvo")
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -689.0
+offset_top = 132.0
+offset_right = -328.0
+offset_bottom = 177.0
+grow_horizontal = 0
+text = "<-- look, a green square"
+label_settings = SubResource("LabelSettings_hwy2l")
